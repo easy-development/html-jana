@@ -1,0 +1,331 @@
+html > body > .component-shop-cart {
+  .container {
+    .title {
+      h2 {
+        span {
+          color: @primaryTextColor;
+        }
+      }
+    }
+    .content {
+      .line-separator-product {
+        height: 1px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #e1e1e1;
+        span {
+          margin: 0;
+          width: 7px;
+          height: 7px;
+          float: left;
+          margin-top: -3px;
+          border-radius: 50%;
+          background: #e1e1e1;
+        }
+      }
+      .number-element {
+        h3 {
+          font-weight: 300;
+          margin: 0 0 0 30px;
+        }
+      }
+      .table-elements-cart {
+        clear: both;
+        padding: 30px;
+        margin-top: 20px;
+        border: 1px solid #e0e0e0;
+        background-color: #ffffff;
+        table {
+          width: 100%;
+          thead {
+            tr {
+              td {
+                font-weight: 300;
+                padding-bottom: 15px;
+                color: @thirdTextColor;
+              }
+            }
+          }
+          tbody {
+            tr {
+              border-top: 1px solid #f2f2f2;
+              td {
+                padding: 10px 0;
+                font-weight: 300;
+                color: @thirdTextColor;
+                &:nth-child(1) {
+                  width: 90px;
+                }
+                &:nth-child(2) {
+                  width: 37%;
+                }
+                img {
+                  width: 80px;
+                  margin-right: 2%;
+                }
+                .remove-element {
+                  padding: 5px;
+                  float: right;
+                  cursor: pointer;
+                  &:hover {
+                    color: @primaryColor;
+                  }
+                }
+                .add-element {
+                  float: left;
+                  .see-number {
+                    margin: 0;
+                    float: left;
+                    padding: 9px 15px;
+                    color: @thirdColor;
+                    text-align: center;
+                    background: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    -moz-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                    -webkit-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                    box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                  }
+                  a {
+                    width: 40px;
+                    float: left;
+                    height: 40px;
+                    padding: 11px;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 18px;
+                    text-align: center;
+                    color: @thirdColor;
+                    background: #f3f3f3;
+                    -moz-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                    -webkit-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                    box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                    &:hover {
+                      background: #fafafa;
+                      color: @primaryColor;
+                    }
+                    &.left {
+                      border: 1px solid #e0e0e0;
+                      border-right: none;
+                    }
+                    &.right {
+                      border: 1px solid #e0e0e0;
+                      border-left: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .row {
+        margin-top: 50px;
+        .calculation-total {
+          padding: 0 30px;
+          margin-bottom: 50px;
+          h3 {
+            font-weight: 300;
+            margin:  0 0 17px 0;
+          }
+          .coupon-code {
+            margin-bottom: 50px;
+            .input-group {
+              input {
+                height: 100%;
+                font-weight: 100;
+                border-radius: 0;
+                padding: 9px 25px;
+                border: 1px solid #e0e0e0;
+                background-color: #ffffff;
+                -moz-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                -webkit-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                &:focus {
+                  border-color: @primaryColor;
+                }
+              }
+              span {
+                .btn {
+                  border-radius: 0;
+                  padding: 9px 25px;
+                  color: @primaryTextColor;
+                  border: 1px solid #e0e0e0;
+                  background-color: #f3f3f3;
+                  -moz-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                  -webkit-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                  box-shadow: 0 2px 3px rgba(32,29,30,.05);
+                  &:hover {
+                    background: #d8d8d8;
+                  }
+                }
+              }
+            }
+          }
+
+          .calculate-shipping {
+            .select-country {
+              width: 100%;
+              margin-bottom: 10px;
+              .chosen-container {
+                width: 100% !important;
+                .chosen-single {
+                  background: #f3f3f3;
+                }
+              }
+            }
+            .form-control {
+              height: inherit;
+              border-radius: 0;
+              padding: 9px 15px;
+              margin: 0 0 10px 0;
+              color: @thirdTextColor;
+              border: 1px solid #e0e0e0;
+              background-color: #f3f3f3;
+              -moz-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+              -webkit-box-shadow: 0 2px 3px rgba(32,29,30,.05);
+              box-shadow: 0 2px 3px rgba(32,29,30,.05);
+              &:hover , &:focus {
+                border-color: @primaryColor;
+              }
+              &:focus {
+               background: #ffffff;
+              }
+            }
+          }
+          .button-update-total {
+            float: right;
+            margin-top: 10px;
+            &:last-child {
+              float: right;
+            }
+            .btn {
+              margin: 0 1px 0 0;
+              padding: 9px 25px;
+            }
+            span {
+              width: 40px;
+              border: none;
+              border-radius: 0;
+              background: #f4f4f4;
+              color: @primaryColor;
+            }
+          }
+        }
+        .see-price-buy {
+          padding: 0 30px;
+          .subtotal-price ,
+          .type-transport ,
+          .total-price {
+            font-weight: 300;
+            padding: 0 0 0 30px;
+            span {
+              float: right;
+            }
+          }
+          .subtotal-price {
+            color: @thirdTextColor;
+          }
+          .type-transport {
+            color: @thirdTextColor;
+          }
+          .total-price {
+            color: #0f0f0f;
+          }
+          .contain-btn {
+            margin-top: 50px;
+            .input-group {
+              float: left;
+              &:last-child {
+                float: right;
+              }
+              .btn {
+                margin: 0 1px 0 0;
+                padding: 9px 25px;
+              }
+              span {
+                width: 40px;
+                border: none;
+                border-radius: 0;
+                background: #f4f4f4;
+                color: @primaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .container {
+      .content {
+        .row {
+          .calculation-total,
+          .see-price-buy {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .container {
+      .content {
+        padding: 0 15px;
+        .table-elements-cart {
+          table {
+            tbody {
+              tr {
+                td {
+                  .add-element {
+                    .see-number {
+                      padding: 3px 10px 2px 10px;
+                    }
+                    a {
+                      width: 27px;
+                      height: 27px;
+                      padding: 4px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xxsScreenSizeMax) {
+    .container {
+      .content {
+        .row {
+          .calculation-total {
+            .button-update-total {
+              float: left;
+              width: 100%;
+              margin-bottom: 20px;
+              a {
+                display: block;
+              }
+            }
+          }
+          .see-price-buy {
+            .contain-btn {
+              .input-group {
+                float: left;
+                width: 100%;
+                margin-bottom: 20px;
+                a {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

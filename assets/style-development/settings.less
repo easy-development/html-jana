@@ -1,0 +1,37 @@
+/**
+Classic     : hsl(201, 100%, 47%)
+Turquoise   : hsl(168, 76%,  42%)
+Emerald     : hsl(145, 63%,  49%)
+Amethyst    : hsl(283, 39%,  53%)
+Sunflower   : hsl(48,  89%,  50%)
+Carrot      : hsl(28,  80%,  52%)
+Alizarin    : hsl(6,   78%,  57%)
+**/
+
+@primaryColor            : hsl(201, 100%, 47%);
+@secondaryColor          : hsl(0,  0%, 20%);
+@thirdColor              : hsl(0,  0%, 33%);
+@fourthColor             : hsl(201, 11%, 24%);
+
+@primaryColorTextDarken  :darken(@primaryColor, 20%);
+
+@primaryColorOpacity90     :fade(@primaryColor, 90%);
+@primaryColorOpacity80     :fade(@primaryColor, 80%);
+
+@primaryTextColor         : @primaryColor;
+@secondaryTextColor       : @secondaryColor;
+@thirdTextColor           : @thirdColor;
+
+@primaryButtonColor       : @primaryColor;
+@secondaryButtonColor     : @thirdColor;
+
+
+@primaryBackgroundWrapper : rgba(58,67,72, 0.9);
+
+@smScreenSizeMax              : 992px;
+@xsScreenSizeMax              : 768px;
+@xxsScreenSizeMax             : 500px;
+
+@sliderImageMaxHeight         : 700px;
+
+

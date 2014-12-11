@@ -1,0 +1,160 @@
+html > body > .component-slider {
+  background-color: #000000;
+  .carousel {
+    position: relative;
+    &.carousel-fade {
+      .carousel-inner {
+        .item {
+          opacity: 0;
+          transition-property: opacity;
+        }
+
+        .active {
+          opacity: 1;
+        }
+
+        .active.left,
+        .active.right {
+          left: 0;
+          opacity: 0;
+          z-index: 1;
+        }
+
+        .next.left,
+        .prev.right {
+          opacity: 1;
+        }
+      }
+
+      .carousel-control {
+        z-index: 2;
+      }
+    }
+    > .carousel-inner {
+
+      .item {
+        min-height: 100%;
+        background-size: cover;
+        background-position: center center;
+
+        .pattern-background{
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: url(../image/slider-patern-background.png) 0 0 repeat;
+        }
+        .carousel-caption {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 69%;
+          margin: auto;
+          text-shadow: none;
+          @media (max-width: @smScreenSizeMax ) {
+            height: 60%;
+          }
+          .contain {
+            width: 100%;
+            height: 100%;
+            @media (max-width: @smScreenSizeMax ) {
+              .title > h1 {
+                font-size: 20px;
+              }
+            }
+
+            > img {
+              @media (max-width: @xsScreenSizeMax ) {
+                width: 20%;
+              }
+            }
+
+            .title {
+              h1 {
+                color: #ffffff;
+                font-size: 4em;
+                margin: 50px 0 30px 0;
+                text-transform: uppercase;
+
+                @media (max-width: @smScreenSizeMax ) {
+                  font-size: 2.8em;
+                  margin: 30px 0 20px 0;
+                }
+                @media (max-width: @xsScreenSizeMax ) {
+                  font-size: 1.8em;
+                  margin: 20px 0 10px 0;
+                }
+                span {
+                  color: @primaryColor;
+                }
+              }
+            }
+            .description {
+              color: #ffffff;
+              font-size: 1.25em;
+              font-weight: 100;
+
+              @media (max-width: @xsScreenSizeMax ) {
+                font-size: 0.85em;
+              }
+            }
+
+            .button {
+              a {
+                margin-top: 60px;
+                box-shadow: none;
+                padding: 10px 20px;
+                border-radius: inherit;
+                border: 1px solid rgba(255,255,255,0.8);
+
+                @media (max-width: @smScreenSizeMax ) {
+                  margin-top: 30px;
+                }
+                @media (max-width: @xsScreenSizeMax ) {
+                  padding: 5px 10px;
+                }
+                @media (max-width: @xxsScreenSizeMax ) {
+                  margin-top: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+      z-index: 9999;
+      background-image: none;
+    }
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right {
+      width: 50px;
+      height: 50px;
+      font-size: 12px;
+      text-shadow: none;
+      line-height: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+
+      @media (max-width: @smScreenSizeMax) {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+    .carousel-control:hover, .carousel-control:focus {
+      color: @primaryColor;
+      span {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

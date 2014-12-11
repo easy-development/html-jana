@@ -1,0 +1,53 @@
+html > body > .component-separator-quotation {
+  .full-background("../image/_separator-quotation-background.jpg");
+
+  .parallax {
+    overflow: hidden;
+    background-color: @primaryColorOpacity80;
+
+    .container{
+      text-align: center;
+      ul {
+        li {
+          > span.fa {
+            color: #ffffff;
+            font-size: 4.2em;
+            text-shadow: none;
+          }
+          > .quotation {
+            margin: 50px;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 3.25em;
+            line-height: 1.3em;
+            text-transform: uppercase;
+          }
+          > .author {
+            font-size: 1.2em;
+            color: #ffffff;
+          }
+
+          @media (max-width: @smScreenSizeMax) {
+            > span.fa {
+              font-size: 3em;
+            }
+            > .quotation {
+              margin: 0;
+              padding: 20px;
+              font-size: 2.5em;
+            }
+          }
+          @media (max-width: @xsScreenSizeMax) {
+            > span.fa {
+              font-size: 2em;
+            }
+            > .quotation {
+              padding: 20px;
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

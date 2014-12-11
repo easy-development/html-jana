@@ -1,0 +1,89 @@
+html > body > .component-element-social-icons {
+  .container {
+    .content {
+      ul.social-icon {
+        text-align: center;
+        li {
+          margin: 12px;
+          text-align: center;
+          display: inline-block;
+          background-color: #ffffff;
+          border: 1px solid rgba(0,0,0,0.1);
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          -ms-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+
+          @media (max-width: @smScreenSizeMax) {
+            margin: 5px;
+          }
+          &.clearfix {
+            opacity: 0;
+          }
+          &:hover {
+            background-color: @primaryColor;
+
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+
+            a {
+              span {
+                color: #ffffff;
+
+                -webkit-transform: rotate(-360deg);
+                -moz-transform: rotate(-360deg);
+                -o-transform: rotate(-360deg);
+                -ms-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+              }
+            }
+          }
+
+          a {
+            span {
+              color: @thirdTextColor;
+
+              -webkit-transition: all 0.3s linear;
+              -moz-transition: all 0.3s linear;
+              -o-transition: all 0.3s linear;
+              -ms-transition: all 0.3s linear;
+              transition: all 0.3s linear;
+            }
+          }
+        }
+
+        &.icon-small {
+          margin-bottom: 80px;
+
+          @media (max-width: @smScreenSizeMax) {
+            margin-bottom: 30px;
+          }
+          li {
+            width: 30px;
+            height: 30px;
+            a {
+              span {
+                line-height: 30px;
+              }
+            }
+          }
+        }
+        &.icon-large {
+          li {
+            width: 40px;
+            height: 40px;
+            a {
+              span {
+                line-height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,357 @@
+html > body > .component-navigation-7 {
+  border-top: none;
+  background: #edecec;
+  border-bottom: 4px solid #edecec;
+
+  &.fixed {
+    &.with-top-separator {
+      top:9px;
+    }
+    top: 0;
+    width:100%;
+    z-index: 10000;
+    position:fixed;
+  }
+
+  > .content {
+    padding: 0 50px;
+    background: #edecec;
+    .navbar {
+      margin: 0;
+      border: none;
+      .navbar-header {
+        .navbar-toggle {
+          margin: 22px 0;
+          background: rgba(0, 0, 0, 0.3);
+          &:hover {
+            .icon-bar {
+              background: @primaryColor;
+            }
+          }
+          .icon-bar {
+            background: #ffffff;
+          }
+        }
+        .logo {
+          margin: 26px 0 25px 0;
+        }
+      }
+      .navbar-collapse {
+        .nav, .navbar{
+          margin: 0;
+          padding: 0;
+          > li {
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+            border-left: 1px solid #ffffff;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            &:last-child {
+              border-right: 1px solid #ffffff;
+            }
+            &.active , &:hover {
+              background: @primaryColor;
+              > a {
+                color: #ffffff;
+                span {
+                  color: #ffffff;
+                }
+              }
+            }
+            &.dropdown {
+              a {
+                outline: none;
+              }
+              .dropdown-menu {
+                left: 0;
+                border: none;
+                right: inherit;
+                margin-top: 4px;
+                min-width: 100px;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 10px 20px;
+                background-color: @primaryColor;
+
+                li {
+                  padding: 5px 0;
+                  text-align: left;
+                  position: relative;
+                  &.active-force , &:hover {
+                    a {
+                      color: @primaryColorTextDarken;
+                    }
+                  }
+                  a {
+                    padding: 0;
+                    color: #ffffff;
+                    text-transform: none;
+                  }
+                }
+              }
+            }
+
+            a {
+              color: @thirdTextColor;
+              font-size: 13px;
+              font-weight: 300;
+              text-shadow: none;
+              padding: 15px 25px;
+              display: inline-block;
+              text-decoration: none;
+              background: transparent;
+              span {
+                display: block;
+                font-size: 20px;
+                color: @thirdTextColor;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1400px ) {
+    & {
+      .content {
+        .navbar {
+          .navbar-collapse {
+            .nav {
+              li {
+                a {
+                  padding: 15px 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px ) {
+    & {
+      .content {
+        .navbar {
+          .navbar-collapse {
+            padding: 0;
+            .nav {
+              li {
+                a {
+                  padding: 15px 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1130px ) {
+    & {
+      .content {
+        padding: 0 15px;
+        .navbar {
+          .navbar-collapse {
+            .nav {
+              li {
+                a {
+                  padding: 15px 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax ) {
+    & {
+      .content {
+        .navbar {
+          .navbar-collapse {
+            .nav {
+              li {
+                a {
+                  padding: 16px 11px;
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 870px ) {
+    & {
+      .content {
+        .navbar {
+          .navbar-collapse {
+            .nav {
+              li {
+                a {
+                  padding: 16px 9px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 840px ) {
+    & {
+      .content {
+        .navbar {
+          .navbar-collapse {
+            .nav {
+              li {
+                a {
+                  padding: 16px 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 800px ) {
+    & {
+      .content {
+        .navbar {
+          .navbar-collapse {
+            .nav {
+              li {
+                a {
+                  padding: 16px 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: @xsScreenSizeMax ) {
+    .navbar {
+      .dropdown {
+        &:hover {
+          background: @primaryColor;
+          > a{
+            color: #ffffff;
+            span {
+              color: #ffffff;
+            }
+          }
+          ul {
+            display: block !important;
+          }
+        }
+        &.open {
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    & {
+      .content {
+        padding: 0 15px;
+        .navbar {
+          .navbar-collapse {
+            margin-bottom: 15px;
+            .nav {
+              li {
+                width: 100%;
+                padding: 0;
+                display: block;
+                text-align: left;
+                margin: 0 0 1px 0;
+                background-color: #fbf9f9;
+                border: 1px solid rgba(0,0,0,0.1);
+                &.active , &:hover {
+                  padding: 0;
+                  margin: 0 0 1px 0;
+                  border-color: rgba(0,0,0,0.2);
+                }
+                a {
+                  width: 100%;
+                  padding: 10px 30px;
+                  span {
+                    padding: 0 10px 0 0;
+                    display: inline-block;
+                  }
+                }
+                &.dropdown {
+                  & , a {
+                    -webkit-transition: all 0s linear;
+                    -moz-transition: all 0s linear;
+                    -o-transition: all 0s linear;
+                    -ms-transition: all 0s linear;
+                    transition: all 0s linear;
+                  }
+
+                  &.open {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    > a{
+                      background: @primaryColor;
+                      border: 1px solid rgba(0,0,0,0.2);
+                    }
+                  }
+                  a {
+                    position: relative;
+                  }
+                  .dropdown-menu {
+                    padding: 0;
+                    border: none;
+                    margin-top: 1px;
+                    box-shadow: none;
+                    margin-left: 30px;
+                    background: transparent;
+                    -webkit-transition: all 3s linear;
+                    -moz-transition: all 3s linear;
+                    -o-transition: all 3s linear;
+                    -ms-transition: all 3s linear;
+                    transition: all 3s linear;
+                    li {
+                      width: 100%;
+                      padding: 0;
+                      display: block;
+                      margin: 0 0 1px 0;
+                      background-color: #ededed;
+                      border: 1px solid rgba(0,0,0,0.1);
+                      &:hover {
+                        a {
+                          color: #ffffff;
+                          background: @primaryColor;
+                        }
+                      }
+                      a {
+                        color: @thirdTextColor;
+                        width: 100%;
+                        padding: 10px 30px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

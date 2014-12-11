@@ -1,0 +1,40 @@
+html > body > .component-element-list-items {
+  .container {
+    .contain {
+      .row {
+        > div {
+          ul {
+            li {
+              float: none;
+              &:hover {
+                div {
+                  span {
+                    -webkit-transition: 0.5s ease-in-out;
+                    -moz-transition: 0.5s ease-in-out;
+                    -o-transition: 0.5s ease-in-out;
+                    transition: 0.5s ease-in-out;
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                  }
+                }
+              }
+              div{
+                display: inline-block;
+                span {
+                  font-size: 1em;
+                  color: @primaryTextColor;
+                }
+              }
+              p {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

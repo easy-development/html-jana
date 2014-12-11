@@ -1,0 +1,100 @@
+html > body > .component-boxes-style-3 {
+    .container{
+      .content {
+        .row {
+          > .col-sm-6.left{
+            > div {
+              .icon {
+                float: left;
+                @media (max-width: @xsScreenSizeMax) {
+                  float: none;
+                  margin: 0 auto;
+                  text-align: center;
+                }
+              }
+              .details {
+                float: left;
+                text-align: left;
+                @media (max-width: @xsScreenSizeMax) {
+                  text-align: center;
+                  width: 100%;
+                }
+                @media (max-width: 1200px) {
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+          > .col-sm-6.right{
+            > div {
+              .icon {
+                float: right;
+                @media (max-width: @xsScreenSizeMax) {
+                  float: none;
+                  margin: 0 auto;
+                  text-align: center;
+                }
+              }
+              .details {
+                float: right;
+                text-align: right;
+                @media (max-width: @xsScreenSizeMax) {
+                  text-align: center;
+                  width: 100%;
+                }
+                @media (max-width: 1200px) {
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+          > .col-sm-6 {
+            > div {
+              margin-bottom: 20px;
+              &:hover {
+                .icon {
+                  background: @primaryColor;
+                  border-color: @primaryColor;
+                  span {
+                    color: #ffffff;
+                  }
+                }
+                .details {
+                  h3 {
+                    color: @primaryTextColor;
+                  }
+                }
+              }
+
+              .icon {
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                background: #ffffff;
+                border: 1px solid #d1d1d1;
+                span {
+                  line-height: 80px;
+                  color: @primaryColor;
+                  &:before {
+                    font-size: 2em;
+                  }
+                }
+
+              }
+              .details {
+                h3 {
+                  font-size: 1em;
+                  font-weight: 300;
+                  margin: 0 0 10px 0;
+                  text-transform: uppercase;
+                }
+                @media (max-width: 1200px) {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

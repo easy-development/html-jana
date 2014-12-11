@@ -1,0 +1,148 @@
+html > body > .component-contact-email-and-map {
+
+  .description {
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  > .relative {
+    height: 760px;
+    position: relative;
+    .modal-contact.active {
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    #responsive_map {
+      max-height: 750px;
+      height: 100%;
+      width: 100%;
+      &.gray-scale {
+        -webkit-filter: grayscale(100%);
+      }
+      div {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+      .gm-style-iw {
+        max-width: none !important;
+        min-width: none !important;
+        max-height: none !important;
+        min-height: none !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        line-height: normal !important;
+        padding: 5px !important;
+      }
+    }
+    .container {
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin: 0 auto;
+      position: absolute;
+      .row {
+        form {
+          float: none;
+          padding: 40px;
+          margin: 0 auto;
+          max-width: 680px;
+          position: relative;
+          background: rgba(255,255,255,0.9);
+
+          &.form-inactive {
+            display: none;
+          }
+
+          .exit-modal {
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.4em;
+            font-weight: 100;
+            position: absolute;
+            color: @secondaryColor;
+            &:hover {
+              color: @primaryColor;
+            }
+          }
+          button {
+            box-shadow: none;
+            padding: 7px 12px;
+            margin: 20px 0 0 15px;
+          }
+          .form-group {
+            label {
+              font-size: 1em;
+              font-weight: 100;
+              color: @thirdTextColor;
+              font-family: "MerriweatherSans" ,sans-serif;
+            }
+            label , input , textarea {
+              border-radius: 0;
+            }
+            textarea {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+      @media (max-width: @xsScreenSizeMax) {
+        & {
+          padding: 0;
+          position: static;
+          .row {
+            form {
+              padding: 10px 0;
+              background-color: #f4f4f4;
+              .exit-modal {
+                top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .contain-button-see-modal {
+      z-index: 5;
+      width: 100%;
+      bottom: 60px;
+      display: none;
+      position: absolute;
+      text-align: center;
+      &.active {
+        display: block;
+      }
+
+      .button-see-modal {
+        background: #ffffff;
+        color: @primaryColor;
+        text-transform: uppercase;
+        border: 1px solid @primaryColor;
+        &:hover {
+          color: #ffffff;
+          border-color: #ffffff;
+          background: @primaryButtonColor;
+        }
+      }
+    }
+
+    @media (max-width: @xsScreenSizeMax) {
+      &.relative {
+        height: auto;
+      }
+      .contain-button-see-modal {
+        bottom: inherit;
+        position: inherit;
+      }
+      .modal-contact , #responsive_map , #responsive_map {
+        display: none !important;
+      }
+    }
+  }
+}

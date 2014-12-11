@@ -1,0 +1,33 @@
+html > body > .component-skills-bar {
+  .container {
+    .title {
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .row {
+      > div {
+        > div {
+          margin-bottom: 40px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          p {
+            font-weight: 500;
+          }
+        }
+
+        &:first-child {
+          > div {
+            &:last-child {
+              @media (max-width: @xsScreenSizeMax) {
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
