@@ -1,4 +1,4 @@
-html-jana
+HTML 5 Jana Template
 =========
 
 HTML 5 Template
